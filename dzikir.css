@@ -1,0 +1,180 @@
+/* Mengatur semua elemen untuk memiliki margin dan padding nol, serta box-sizing border-box */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Mengatur latar belakang halaman dengan gambar yang menutupi seluruh area */
+body {
+    background-image: url(gambar/peakpx8.jpg);
+    background-size: cover;
+}
+
+/* Menghilangkan dekorasi teks pada tautan dan mengatur warna teks */
+a {
+    text-decoration: none;
+    color: #313133; /* Warna teks tautan */
+}
+
+/* Mengatur tampilan navigasi dengan flexbox agar menu berada di tengah dan tetap di atas */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    z-index: 5;
+}
+
+/* Mengatur tampilan menu navigasi dengan efek blur dan latar belakang semi-transparan */
+.menu-bar {
+    width: 60%;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgba(155, 145, 145, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 0 10px;
+}
+
+/* Mengatur item menu dengan padding, margin, dan warna teks */
+.menu-bar li {
+    list-style: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    color: #313133; /* Warna teks item menu */
+}
+
+/* Mengatur efek sebelum item menu dengan perubahan latar belakang dan bayangan pada hover */
+.menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.menu-bar li:hover::before {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    box-shadow: 0px 3px 10px 0px black;  
+    transform: scale(1.2);
+}
+
+/* Mengatur margin atas untuk elemen dengan kelas .haha */
+.haha {
+    margin-top: 100px;
+}
+
+/* Mengatur tampilan area utama dengan flexbox dan jarak antar elemen */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Mengatur tampilan dzikir pagi dengan flexbox dan teks di tengah */
+.dzikirpagi {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Mengatur gaya container dengan warna latar belakang, padding, dan bayangan */
+.container {
+    width: 400px;
+    background-color: #008B8B; /* Warna latar belakang kontainer */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    margin: 20px;
+}
+
+/* Mengatur efek saat kontainer di-hover dengan transformasi */
+.container:hover {
+    transform: scale(1.05);
+}
+
+/* Mengatur gaya paragraf dalam kontainer dengan warna teks dan margin bawah */
+.container p {
+    line-height: 1.6;
+    color: aliceblue; /* Warna teks paragraf */
+    margin-bottom: 20px;
+}
+
+/* Mengatur ukuran font untuk arab dzikir */
+.arab-dzikir {
+    font-size: 25px;
+}
+
+/* Mengatur ukuran font untuk arti dzikir */
+.arti-dzikir {
+    font-size: 20px;
+}
+
+/* Mengatur gaya footer dengan latar belakang gelap, teks putih, dan pusatkan teks */
+footer {
+    background-color: #313133;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 5;
+}
+
+/* Mengatur tampilan container dalam footer dengan flexbox */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mengatur margin untuk ikon sosial dalam footer */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+/* Mengatur margin untuk tautan ikon sosial */
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Mengatur gaya ikon sosial dengan padding, ukuran font, dan efek teks */
+#instagram,
+#telegram,
+#whatsapp,
+#facebook {
+    padding: 25px 15px 0;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 0 0 15px #fff;
+}
+
+/* Mengatur garis horizontal dalam footer */
+hr {
+    width: 95%;
+    margin-top: 30px;
+}
+
+/* Mengatur ukuran font dan cursor untuk teks dalam footer */
+footer p {
+    font-size: 30px;
+    cursor: default;
+}

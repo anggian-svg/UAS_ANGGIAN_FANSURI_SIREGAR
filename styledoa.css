@@ -1,0 +1,259 @@
+/* Mengatur semua elemen untuk memiliki margin dan padding nol, serta box-sizing border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur latar belakang halaman dengan gambar yang menutupi seluruh area */
+body {
+    background-image: url(gambar/peakpx8.jpg);
+    background-size: cover;
+}
+
+/* Mengatur tampilan navigasi dengan flexbox agar menu berada di tengah dan tetap di atas */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    z-index: 5;
+}
+
+/* Menghilangkan dekorasi teks pada tautan dan mengatur warna teks menjadi hitam */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Mengatur tampilan menu navigasi dengan efek blur dan latar belakang semi-transparan */
+.menu-bar {
+    width: 60%;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgba(155, 145, 145, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 0 10px;
+}
+
+/* Mengatur item menu dengan padding, margin, dan efek hover */
+.menu-bar li {
+    list-style: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Mengatur efek sebelum item menu dengan perubahan latar belakang dan bayangan pada hover */
+.menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.menu-bar li:hover::before {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    box-shadow: 0px 3px 10px 0px black;  
+    transform: scale(1.2);
+}
+
+/* Mengatur tampilan kontainer pencarian dengan margin dan pusatkan secara horizontal */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* Mengatur gaya input pencarian dengan padding, border-radius, dan warna latar belakang */
+input {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(155, 145, 145, 0.4);
+    font-size: 16px;
+    width: 650px;
+}
+
+/* Mengatur gaya placeholder dalam input */
+input::placeholder {
+    font-style: italic;
+    color: rgb(118, 112, 78);
+}
+
+/* Mengatur tampilan area utama dengan flexbox dan jarak antar elemen */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Mengatur area doa harian dengan flexbox dan ukuran penuh */
+.doa-harian1 {
+    width: 100%;
+    height: 400px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mengatur efek hover pada header doa dengan transformasi dan bayangan */
+.header-doa:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Mengatur gaya nama doa dengan margin, padding, dan latar belakang semi-transparan */
+.name-doa {
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 5px 0;
+    text-align: center;
+    background-color: rgba(155, 145, 145, 0.4);
+    border-radius: 5px;
+}
+
+/* Mengatur gaya arab doa dengan animasi transisi */
+.arab-doa {
+    transition: transform 0.4s ease; /* Animasi transisi */
+    font-size: 35px;
+}
+
+/* Mengatur tampilan arab doa saat diterjemahkan dengan transformasi */
+.arab-doa.translated {
+    transform: translateY(-25px);
+}
+
+/* Mengatur gaya tombol terjemahan dengan latar belakang abu-abu dan efek hover */
+.btn-translate {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Menjadikan tombol sebagai blok */
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Mengatur efek saat tombol ditekan */
+.btn-translate:active {
+    background-color: green;
+    color: gold;
+}
+
+/* Mengatur gaya arti doa dengan ukuran font dan display tersembunyi */
+.arti-doa {
+    font-size: 20px;
+    text-align: center;
+    display: none; /* Mulai tersembunyi */
+}
+
+/* Menampilkan arti doa saat tombol diterjemahkan ditekan */
+.arti-doa.show {
+    display: block; /* Tampilkan ketika tombol ditekan */
+}
+
+/* Mengatur gaya header doa dengan gambar latar belakang, bayangan, dan padding */
+.header-doa {
+    background-image: url(gambar/unduhan5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 14px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    position: relative;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    justify-content: space-between; /* Penyusunan tombol di bawah teks */
+    overflow: hidden; /* Menghindari overflow dari elemen */
+}
+
+/* Mengatur transisi pada nama doa dan arab doa */
+.name-doa, .arab-doa {
+    transition: transform 0.3s ease; /* Animasi transisi */
+}
+
+/* Mengatur transisi tampilan arti doa */
+.arti-doa.show {
+    display: block; /* Tampilkan ketika tombol ditekan */
+    transition: transform 1s ease; /* Animasi transisi */
+}
+
+/* Mengatur gaya footer dengan latar belakang gelap, teks putih, dan pusatkan teks */
+footer {
+    background-color: #313133;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 5350px; /* Perhatikan nilai margin-top yang sangat besar, mungkin perlu disesuaikan */
+    width: 100%;
+    z-index: 5;
+}
+
+/* Mengatur tampilan container dalam footer dengan flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mengatur margin untuk ikon sosial dalam footer */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+/* Mengatur margin untuk tautan ikon sosial */
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Mengatur gaya ikon sosial dengan padding, ukuran font, dan efek teks */
+#instagram,
+#telegram,
+#whatsapp,
+#facebook {
+    padding: 25px 15px 0;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 0 0 15px #fff;
+}
+
+/* Mengatur garis horizontal dalam footer */
+hr {
+    width: 95%;
+    margin-top: 30px;
+}
+
+/* Mengatur ukuran font dan cursor untuk teks dalam footer */
+footer p {
+    font-size: 30px;
+    cursor: default;
+}

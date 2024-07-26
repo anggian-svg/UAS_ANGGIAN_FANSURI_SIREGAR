@@ -1,0 +1,390 @@
+/* Mengatur semua elemen untuk memiliki margin dan padding nol, serta box-sizing border-box */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Mengatur latar belakang halaman dengan gambar dan menggunakan flexbox untuk pusat konten */
+body {
+    background-image: url(gambar/masjid4.jpg);
+    background-size: 100% 670px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    overflow-x: hidden;
+}
+
+/* Mengatur navigasi agar berada di posisi tetap di atas dengan lebar penuh dan center content */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    z-index: 5;
+}
+
+/* Mengatur tampilan menu navigasi dengan efek blur dan latar belakang semi-transparan */
+.menu-bar {
+    width: 90%;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgba(155, 145, 145, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+/* Mengatur item menu dengan padding, margin, dan efek hover untuk memberikan umpan balik visual */
+.menu-bar li {
+    list-style: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    color: #313133;
+}
+
+/* Menambahkan efek hover pada item menu dengan perubahan latar belakang dan bayangan */
+.menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.menu-bar li:hover::before {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    box-shadow: 0px 3px 10px 0px black;  
+    transform: scale(1.2);
+}
+
+/* Mengatur warna teks saat item menu di-hover */
+.menu-bar li:hover {
+    color: black;
+}
+
+/* Menghilangkan dekorasi teks dan mengatur warna untuk tautan menu */
+.menu-bar a {
+    text-decoration: none;
+    color: #313133;
+}
+
+/* Mengatur header dengan flexbox dan margin atas */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px; 
+}
+
+/* Mengatur area teks di header dengan gradien latar belakang dan animasi */
+.kata {
+    height: 200px;
+    width: 900px;
+    margin-top: 90px;
+    text-align: center;
+    border-radius: 30px; 
+    background: linear-gradient(120deg, rgba(229, 229, 229, 0.7) 30%, rgba(240, 240, 240, 0.7) 38%, rgba(240, 240, 240, 0.7) 40%, rgba(229, 229, 229, 0.7) 48%);
+    background-size: 200% 100%; 
+    background-position: 100% 0; 
+    animation: gerak 1s infinite linear; 
+}
+
+/* Keyframes untuk animasi latar belakang yang bergerak dari kanan ke kiri */
+@keyframes gerak {
+    100% {
+      background-position: -100% 0;
+    }
+}
+
+/* Mengatur gaya untuk elemen h1 dalam .kata */
+.kata h1 {
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 80px;
+}
+
+/* Mengatur pembungkus tombol dengan flexbox */
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+/* Mengatur tombol dengan gaya khusus, latar belakang gradien, dan efek hover */
+.button {
+    min-width: 300px;
+    min-height: 60px; 
+    font-size: 22px; 
+    text-align: center; 
+    letter-spacing: 2px; 
+    font-weight: 700; 
+    color: #313133; 
+    background: linear-gradient(90deg, rgb(217, 182, 116) 0%, rgba(79,209,197,1) 100%); 
+    border: none; 
+    border-radius: 1000px; 
+    box-shadow: 10px 10px 100px rgba(79,209,197,0.64); 
+    transition: all 0.3s ease-in-out 0s; 
+    cursor: pointer; 
+    outline: none; 
+    position: relative; 
+    padding: 10px; 
+}
+
+/* Mengatur efek hover dan fokus pada tombol */
+.button:hover, 
+.button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+/* Mengatur efek sebelum dan sesudah tombol untuk animasi */
+.button:hover::before, 
+.button:focus::before {
+    opacity: 1;
+}
+
+.button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid rgb(230, 175, 74);
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+/* Menghilangkan animasi pada hover dan fokus tombol */
+.button:hover::after, 
+.button:focus::after {
+    animation: none;
+    display: none;
+}
+
+/* Keyframes untuk animasi ring pada tombol */
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 350px;
+        height: 350px;
+        opacity: 0;
+    }
+}
+
+/* Mengatur tampilan area view dengan flexbox */
+.view {
+    width: 100%;
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Mengatur margin bawah untuk konten 1 */
+.view .konten1 {
+    margin-bottom: 80px;
+}
+
+/* Mengatur gaya untuk elemen konten dengan efek transisi */
+.konten1, .konten2 {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    margin: 30px auto;
+    opacity: 0;
+    transform: translateX(150px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+/* Mengatur gaya gambar dalam konten */
+.konten1 .gambar1, .konten2 .gambar2 {
+    height: 80%;
+    width: 50%;
+    margin: 0;
+}
+
+/* Mengatur ukuran dan gaya gambar dalam konten 1 */
+.konten1 .gambar1 img {
+    margin-top: 50px;
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Mengatur ukuran dan gaya gambar dalam konten 2 */
+.konten2 .gambar2 img {
+    margin-top: 80px;
+    width: 550px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Mengatur gaya teks dalam konten */
+.konten1 .kata1, .konten2 .kata2 {
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+}
+
+/* Mengatur gaya konten saat ditampilkan */
+.konten1.show, .konten2.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Mengatur gaya teks dalam konten 1 */
+.konten1 .kata1 h2, .konten2 .kata2 h2 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: 'Dancing Script';
+}
+
+/* Mengatur gaya teks dalam konten 1 */
+.konten1 .kata1 h3, .konten2 .kata2 h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Dancing Script';
+}
+
+/* Mengatur ukuran font untuk paragraf dalam konten */
+.konten1 .kata1 p, .konten2 .kata2 p {
+    font-size: 20px;
+}
+
+/* Mengatur area rekomendasi dengan flexbox dan overflow-x auto */
+.rek {
+    width: 1300px;
+    height: 400px;
+    border-radius: 5px;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+/* Mengatur margin untuk heading di area rekomendasi */
+.rekomen h2 {
+    margin: 50px 0px;
+}
+
+/* Menyembunyikan scrollbar pada area rekomendasi */
+.rek::-webkit-scrollbar {
+    display: none;
+}
+
+/* Mengatur gaya elemen chanel dalam area rekomendasi */
+.rek .chanel {
+    min-width: 400px; 
+    height: 300px;
+    border-radius: 5px;
+    margin-right: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+/* Menghilangkan margin pada elemen chanel terakhir */
+.chanel:last-child {
+    margin-right: 0; 
+}
+
+/* Mengatur gaya heading dalam area rekomendasi dengan latar belakang semi-transparan */
+.rek h3 {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fdf8f8;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+    margin: 0;
+}
+
+/* Mengatur gambar dalam area rekomendasi dengan ukuran penuh dan border radius */
+.rek img {
+    width: 100%;
+    height: 270px;
+    border-radius: 5px;
+}
+
+/* Menghilangkan dekorasi teks pada tautan dalam area rekomendasi */
+.rek a {
+    text-decoration: none;
+}
+
+/* Mengatur gaya footer dengan latar belakang gelap dan warna teks putih */
+footer {
+    margin-top: 70px;
+    width: 100%;
+    height: 250px;
+    background-color: #313133;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Mengatur gaya container dalam footer dengan flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mengatur ikon sosial dengan margin dan ukuran font besar */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Mengatur gaya ikon sosial dengan padding dan efek teks */
+#instagram,
+#telegram,
+#whatsapp,
+#facebook {
+    padding: 25px 15px 0;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 15px #fff;
+}
+
+/* Mengatur gaya garis horizontal dalam footer */
+hr {
+    width: 95%;
+    margin-top: 30px;
+}
+
+/* Mengatur gaya teks dalam footer */
+footer p {
+    font-size: 30px;
+    cursor: default;
+}

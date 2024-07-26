@@ -1,0 +1,340 @@
+@media (max-width: 1200px) {
+    body {
+        background-size: contain; 
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+    }
+
+    .menu-bar li {
+        padding: 10px 20px;
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    .menu-bar a {
+        padding: 10px 20px;
+    }
+
+    
+}
+
+@media (max-width: 1050px) {
+    body {
+        background-size: contain; 
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+    }
+
+    .menu-bar li {
+        padding: 9px 19px;
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .menu-bar a {
+        padding: 9px 19px;
+    }
+
+}
+
+@media (max-width: 950px) {
+    body {
+        background-size: contain; 
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+    }
+
+    .menu-bar li {
+        padding: 8px 18px;
+        margin: 0px 0px;
+        font-size: 14px;
+    }
+
+    .menu-bar a {
+        padding: 9px 18px;
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+        background-size: contain; 
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+    }
+
+    .menu-bar li {
+        padding: 8px 16px;
+        margin: 0px 0px;
+        font-size: 13px;
+    }
+
+    .menu-bar a {
+        padding: 8px 16px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 140px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    #instagram,
+    #telegram,
+    #whatsapp,
+    #facebook {
+        font-size: 30px;
+    }
+
+    .social-icons a {
+        margin: 0;
+    }
+
+    hr{
+        display: none;
+    }
+
+}
+
+@media (max-width: 750px) {
+    body {
+        background-size: contain; 
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+        margin-top: -7px;
+    }
+
+    .menu-bar li {
+        padding: 7px 14px;
+        font-size: 12px;
+        margin: 0px 5px;
+    }
+
+    .menu-bar a {
+        padding: 7px 14px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 120px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    #instagram,
+    #telegram,
+    #whatsapp,
+    #facebook {
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        margin: 0;
+    }
+
+    hr{
+        display: none;
+    }
+
+    /*  */
+
+    input {
+        width: 490px;
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    body {
+        background-size: contain; 
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+        margin-top: -10px;
+    }
+
+    .menu-bar li {
+        padding: 6px 12px;
+        font-size: 11px;
+        margin: 0px 4px;
+    }
+
+    .menu-bar a {
+        padding: 6px 12px;
+    }
+
+     /* footer */
+
+    footer {
+        height: 120px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    #instagram,
+    #telegram,
+    #whatsapp,
+    #facebook {
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        margin: 0;
+    }
+
+    hr{
+        display: none;
+    }
+
+    /*  */
+
+    input {
+        width: 420px;
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    body {
+        background-size: contain; 
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+        margin-top: -12px;
+    }
+
+    .menu-bar li {
+        padding: 5px 10px;
+        font-size: 10px;
+        margin: 0px 3px;
+    }
+
+    .menu-bar a {
+        padding: 5px 10px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 120px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    #instagram,
+    #telegram,
+    #whatsapp,
+    #facebook {
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        margin: 0;
+    }
+
+    hr{
+        display: none;
+    }
+
+    /*  */
+
+    input {
+        width: 390px;
+        font-size: 15px;
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    body {
+        background-size: contain; 
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 95%;
+        padding: 0 5px;
+        margin-top: -15px;
+    }
+
+    .menu-bar li {
+        padding: 5px 10px;
+        font-size: 9px;
+        margin: 0;
+    }
+
+    .menu-bar a {
+        padding: 8px 10px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 140px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    #instagram,
+    #telegram,
+    #whatsapp,
+    #facebook {
+        font-size: 15px;
+    }
+
+    .social-icons a {
+        margin: 0;
+    }
+
+    hr{
+        display: none;
+    }
+
+
+    /*  */
+
+    input {
+        width: 350px;
+        font-size: 12px;
+    }
+
+}

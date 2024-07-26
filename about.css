@@ -1,0 +1,237 @@
+/* Mengatur semua elemen untuk memiliki margin dan padding nol, serta box-sizing border-box */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Mengatur latar belakang halaman dengan warna teal */
+body {
+    background-color: #008B8B; /* Warna latar belakang halaman */
+}
+
+/* Menghilangkan dekorasi teks pada tautan dan mengatur warna teks */
+a {
+    text-decoration: none;
+    color: #313133; /* Warna teks tautan */
+}
+
+/* Mengatur tampilan navigasi dengan flexbox agar menu berada di tengah dan tetap di atas */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 0;
+    z-index: 5;
+}
+
+/* Mengatur tampilan menu navigasi dengan efek blur dan latar belakang semi-transparan */
+.menu-bar {
+    width: 90%;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgba(155, 145, 145, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+/* Mengatur item menu dengan padding, margin, dan warna teks */
+.menu-bar li {
+    list-style: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    color: #313133; 
+}
+
+/* Mengatur efek sebelum item menu dengan perubahan latar belakang dan bayangan pada hover */
+.menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.menu-bar li:hover::before {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    box-shadow: 0px 3px 10px 0px black;  
+    transform: scale(1.2);
+}
+
+/* Mengatur tampilan bagian ttg1 dengan flexbox dan margin untuk posisi */
+.ttg1 {
+    width: 80%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+
+/* Mengatur ukuran gambar logo dan margin kiri */
+.logo img {
+    width: 250px;
+    margin-left: 60px;
+}
+
+/* Mengatur padding untuk elemen dengan kelas .desk */
+.desk {
+    padding-top: 40px;
+}
+
+/* Mengatur gaya h2 dalam kelas .desk dengan ukuran font besar, warna putih, dan efek outline */
+.desk h2 {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    position: relative;
+    color: white;
+    -webkit-text-stroke: 2px black; /* Efek outline pada teks */
+}
+
+/* Mengatur gaya h3 dalam kelas .desk dengan ukuran font, warna emas */
+.desk h3 {
+    font-size: 30px;
+    font-family: sans-serif;
+    position: relative;
+    color: gold;
+}
+
+/* Mengatur gaya paragraf dalam kelas .desk dengan ukuran font dan warna putih */
+.desk p {
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    color: white;
+}
+
+/* Mengatur gaya span dengan ukuran font besar, warna putih, dan efek outline serta bayangan */
+span {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    position: relative;
+    color: white;
+    -webkit-text-stroke: 2px black; /* Efek outline pada teks */
+    text-shadow: 2px 5px black;
+}
+
+/* Mengatur animasi untuk span dengan nama Dailydu'a */
+span::before {
+    position: absolute;
+    content: "Dailydu'a";
+    color: gold;
+    animation: fill 4s linear infinite;
+    overflow: hidden;
+}
+
+/* Animasi untuk span dengan efek pengisian */
+@keyframes fill {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+/* Mengatur tampilan bagian ttg2 dengan flexbox dan margin untuk posisi */
+.ttg2 {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 160px;
+    margin-top: 60px;
+}
+
+/* Mengatur gaya h1 dalam kelas .ttg2 dengan font Dancing Script dan warna putih */
+.ttg2 h1 {
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    font-weight: 100;
+    color: white;
+}
+
+/* Mengatur gaya paragraf dalam kelas .ttg2 dengan ukuran font dan warna putih */
+.ttg2 p {
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    color: white;
+}
+
+/* Mengatur gaya h3 dalam kelas .ttg2 dengan ukuran font dan warna emas */
+.ttg2 h3 {
+    font-size: 30px;
+    font-family: sans-serif;
+    position: relative;
+    color: gold;
+}
+
+/* Mengatur gaya footer dengan latar belakang gelap, teks putih, dan pusatkan teks */
+footer {
+    margin-top: 150px;
+    background-color: #313133;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 5;
+    flex-shrink: 0; /* Menghindari footer menyusut */
+}
+
+/* Mengatur tampilan container dalam footer dengan flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mengatur margin untuk ikon sosial dalam footer */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+/* Mengatur margin untuk tautan ikon sosial */
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Mengatur gaya ikon sosial dengan padding, ukuran font, dan efek teks */
+#instagram,
+#telegram,
+#whatsapp,
+#facebook {
+    padding: 25px 15px 0;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 0 0 15px #fff;
+}
+
+/* Mengatur garis horizontal dalam footer */
+hr {
+    width: 95%;
+    margin-top: 30px;
+}
+
+/* Mengatur ukuran font dan cursor untuk teks dalam footer */
+footer p {
+    font-size: 30px;
+    cursor: default;
+}

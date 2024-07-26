@@ -1,0 +1,555 @@
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    body {
+        background-size: contain;
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+    }
+
+    .menu-bar li {
+        padding: 10px 20px;
+        margin: 0px;
+        font-size: 15px;
+    }
+
+    .menu-bar a {
+        padding: 10px 20px;
+    }
+
+    /* ttg1 and ttg2 */
+    .ttg1, .ttg2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .ttg1 {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+    }
+
+    .ttg1 .logo img {
+        width: 200px;
+    }
+
+    .ttg2 h1 {
+        font-size: 40px;
+    }
+
+    .ttg2 p, .ttg2 h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1050px) {
+    body {
+        background-size: contain;
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+    }
+
+    .menu-bar li {
+        padding: 9px 19px;
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .menu-bar a {
+        padding: 9px 19px;
+    }
+
+    /* ttg1 and ttg2 */
+    .ttg1, .ttg2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .ttg1 {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+    }
+
+    .ttg1 .logo img {
+        width: 180px;
+    }
+
+    .ttg2 h1 {
+        font-size: 30px;
+    }
+
+    .ttg2 p, .ttg2 h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 950px) {
+    body {
+        background-size: contain;
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+    }
+
+    .menu-bar li {
+        padding: 8px 18px;
+        margin: 0px 0px;
+        font-size: 14px;
+    }
+
+    .menu-bar a {
+        padding: 9px 18px;
+    }
+
+    /* ttg1 and ttg2 */
+    .ttg1, .ttg2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .ttg1 {
+        align-items: center;
+        height: auto;
+    }
+
+    .ttg1 .logo img {
+        width: 160px;
+    }
+
+    .ttg2 h1 {
+        font-size: 36px;
+    }
+
+    .ttg2 p, .ttg2 h3 {
+        font-size: 16px;
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+        background-size: contain;
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+    }
+
+    .menu-bar li {
+        padding: 8px 16px;
+        margin: 0px 0px;
+        font-size: 13px;
+    }
+
+    .menu-bar a {
+        padding: 8px 16px;
+    }
+
+    /* footer */
+    footer {
+        height: 140px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    #instagram,
+    #telegram,
+    #whatsapp,
+    #facebook {
+        font-size: 30px;
+    }
+
+    .social-icons a {
+        margin: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    /* ttg1 and ttg2 */
+    .ttg1, .ttg2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .ttg1 {
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+    }
+
+    .ttg1 .logo img {
+        width: 140px;
+    }
+
+    .ttg2 h1 {
+        font-size: 34px;
+    }
+
+    .ttg2 p, .ttg2 h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    body {
+        background-size: contain;
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+        margin-top: -7px;
+    }
+
+    .menu-bar li {
+        padding: 7px 14px;
+        font-size: 12px;
+        margin: 0px 5px;
+    }
+
+    .menu-bar a {
+        padding: 7px 14px;
+    }
+
+    /* footer */
+    footer {
+        height: 120px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    #instagram,
+    #telegram,
+    #whatsapp,
+    #facebook {
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        margin: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    /* ttg1 and ttg2 */
+    .ttg1, .ttg2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .ttg1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .ttg1 span{
+        font-size: 40px;
+
+    }
+
+    .ttg1 h3{
+        font-size: 20px;
+
+    }
+
+    .ttg1 p{
+        font-size: 15px;
+
+    }
+
+    .ttg1 .logo img {
+        display: none;
+
+    }
+
+    .ttg2 h1 {
+        font-size: 32px;
+    }
+
+    .ttg2 p, .ttg2 h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-size: contain;
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+        margin-top: -10px;
+    }
+
+    .menu-bar li {
+        padding: 6px 12px;
+        font-size: 11px;
+        margin: 0px 4px;
+    }
+
+    .menu-bar a {
+        padding: 6px 12px;
+    }
+
+    /* footer */
+    footer {
+        height: 120px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    #instagram,
+    #telegram,
+    #whatsapp,
+    #facebook {
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        margin: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    /* ttg1 and ttg2 */
+    .ttg1, .ttg2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .ttg1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .ttg1 span{
+        font-size: 40px;
+
+    }
+
+    .ttg1 h3{
+        font-size: 20px;
+
+    }
+
+    .ttg1 p{
+        font-size: 15px;
+
+    }
+
+    .ttg1 .logo img {
+        width: 100px;
+    }
+
+    .ttg2 h1 {
+        font-size: 30px;
+    }
+
+    .ttg2 p, .ttg2 h3 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        background-size: contain;
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 90%;
+        margin-top: -12px;
+    }
+
+    .menu-bar li {
+        padding: 5px 10px;
+        font-size: 10px;
+        margin: 0px 3px;
+    }
+
+    .menu-bar a {
+        padding: 5px 10px;
+    }
+
+    /* footer */
+    footer {
+        height: 120px;
+        margin-top: 180px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    #instagram,
+    #telegram,
+    #whatsapp,
+    #facebook {
+        font-size: 20px;
+    }
+
+    .social-icons a {
+        margin: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    /* ttg1 and ttg2 */
+    .ttg1, .ttg2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .ttg1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .ttg1 span{
+        font-size: 40px;
+
+    }
+
+    .ttg1 h3{
+        font-size: 20px;
+
+    }
+
+    .ttg1 p{
+        font-size: 15px;
+
+    }
+
+    .ttg1 .logo img {
+        display: none;
+
+    }
+
+    .ttg2 h1 {
+        font-size: 28px;
+    }
+
+    .ttg2 p, .ttg2 h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        background-size: contain;
+    }
+
+    /* nav */
+    .menu-bar {
+        width: 95%;
+        padding: 0 5px;
+        margin-top: -15px;
+    }
+
+    .menu-bar li {
+        padding: 5px 10px;
+        font-size: 9px;
+        margin: 0;
+    }
+
+    .menu-bar a {
+        padding: 8px 10px;
+    }
+
+    /* footer */
+    footer {
+        height: 140px;
+        margin-top: 180px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin-top: -5px;
+    }
+
+    #instagram,
+    #telegram,
+    #whatsapp,
+    #facebook {
+        font-size: 15px;
+    }
+
+    .social-icons a {
+        margin: 0;
+    }
+
+    hr {
+        display: none;
+    }
+
+    /* ttg1 and ttg2 */
+    .ttg1, .ttg2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .ttg1 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .ttg1 span{
+        font-size: 40px;
+    }
+
+    .ttg1 h3{
+        font-size: 17px;
+    }
+
+    .ttg1 p{
+        font-size: 14px;
+    }
+
+    .ttg1 .logo img {
+        display: none;
+
+    }
+
+    .ttg2 h1 {
+        font-size: 30px;
+    }
+
+    .ttg2 p, .ttg2 h3 {
+        font-size: 14px;
+    }
+}
